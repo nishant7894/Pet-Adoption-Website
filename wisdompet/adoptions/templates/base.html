@@ -1,0 +1,54 @@
+{% load static %}
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Wisdom Pet Medicine</title>
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    </head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-logo-image">
+                            <a href="/">
+                                <img src="{% static "images/logo.png"%}" alt="Wisdom Pet Medicine">
+                            </a>
+                        </div>
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Wisdom Pet Medicine" rel="home">Wisdom Pet Medicine</a>
+                            </h1>
+                            <p>We treat your pets like we treat our own.</p>
+                        </div>
+                    </div>
+                    <img src="{% static "images/header.jpg"%}" alt="Wisdom Pet Medicine">
+                </div>
+            </header>
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of health conditions in companion animals, including dogs, cats, birds, reptiles, rodents, and fish. We apply the latest healthcare technology, along with the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest and most effective treatments and cures, while maintaining a caring relationship with our patients and their guardians.</p>
+                        <hr>
+                        <div>
+                        {% block content %}
+                        {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    
+"Welcome to Wisdom Pet Medicine, where heartfelt connections are made between humans and their future furry companions. Our mission is to unite you with a lifelong friend who'll bring joy, love, and endless wagging tails into your life.
+
+At Wisdom Pet Medicine, our commitment goes beyond adoption. We strive to match you with the ideal pet, considering your lifestyle, preferences, and the unique personality of each animal. Our team passionately facilitates this journey, guiding you through the process with care and expertise.
+
+With us, you'll experience the joy of saving a life and gaining an irreplaceable companion. Join our community of pet lovers today and discover the incredible bond waiting for you at Wisdom Pet Medicine. Begin your journey towards unconditional love, endless cuddles, and a lifelong friendship."
+                </div>
+            </footer>
+        </div>
+       
+    </body>
+    <script src="{% static 'main.js' %}"></script> 
+</html>
